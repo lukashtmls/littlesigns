@@ -67,15 +67,20 @@ main > section.section_indice div{
     padding: 10px;
     margin-bottom: 10px;
     display: inline-block;
+    text-align: center;
 }
 
 main > section.section_indice img{
+    display: block;
     width: 200px;
+    margin: auto;
+    border-radius: 15px;
 }
 
 section.section_indice hr {
-    width: 200px;
+    width: 100%;
     margin: 0;
+    margin-top: 5px;
 }
 
 section.section_indice div:hover {
