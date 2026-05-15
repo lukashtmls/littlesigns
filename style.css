@@ -93,6 +93,7 @@ section.section_indice hr {
 
 section.section_indice div:hover {
     transform: scale(1.02);
+    cursor: pointer;
 }
 
 main > section.section_indice h1 {
