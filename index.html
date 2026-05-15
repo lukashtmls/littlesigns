@@ -18,38 +18,38 @@
             <img src="imagens/logo.png" alt="logo little signs">
 
             <p>
-                Trabalho desenvolvido para a feira de projetos do Senac Pindamonhangaba.
-                Orientação: Prof. Ma. Iara Diniz de Souza,
-                Bruno Ribeiro Santos, Joana Carvalho Baenninger Vieira de Souza, Luiz Guilherme Nunes da Silva, Lukas Gomes do Carmo, Nicolas Evaristo Martins
+                Trabalho desenvolvido para a feira de projetos do Senac Pindamonhangaba.<br>
+                Orientação: Prof. Ma. Iara Diniz de Souza,<br>
+                Bruno Ribeiro Santos, Joana Carvalho Bäenninger Vieira de Souza, Luiz Guilherme Nunes da Silva, Lukas Gomes do Carmo, Nicolas Evaristo Martins
             </p>
         </section>
         <hr>
         <section class="section_indice">
-            <div class="numeros">
+            <div id="numeros" onclick="a_num()">
                 <img src="imagens/numeros.webp" alt="imagem numeros">
                 <hr>
                 <h1>Números</h1>
             </div>
 
-            <div class="alfabeto">
+            <div id="alfabeto" onclick="a_alf()">
                 <img src="imagens/abcd.jpg" alt="imagem numeros">
                 <hr>
                 <h1>Alfabeto</h1>
             </div>
 
-            <div class="cumprimento">
+            <div id="cumprimento" onclick="a_cum()">
                 <img src="imagens/cumprimento.png" alt="imagem cumprimento">
                 <hr>
                 <h1>Cumprimentos</h1>
             </div>
 
-            <div class="animais">
+            <div id="animais" onclick="a_ani()">
                 <img src="imagens/animais.webp" alt="imagem animais">
                 <hr>
                 <h1>Animais</h1>
             </div>
 
-            <div class="cores">
+            <div id="cores" onclick="a_cor()">
                 <img src="imagens/cores.jpeg" alt="imagem cores">
                 <hr>
                 <h1>Cores</h1>
@@ -58,4 +58,26 @@
 
     </main>
 </body>
+<script>
+    function a_num() {
+        window.document.getElementById("numeros").style.height = "200px"
+        
+    }
+
+    function a_alf() {
+        window.document.getElementById("alfabeto").style.height = "200px"
+    }
+
+    function a_cum() {
+        window.document.getElementById("cumprimento").style.height = "200px"
+    }
+
+    function a_ani() {
+        window.document.getElementById("animais").style.height = "200px"
+    }
+
+    function a_cor() {
+        window.document.getElementById("cores").style.height = "200px"
+    }
+</script>
 </html>
