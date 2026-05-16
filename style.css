@@ -4,6 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+@font-face {
+    font-family: ASl;
+    src: url(fontes/American\ Sign\ Lenguage.otf) format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +42,7 @@ main {
     max-width: 700px;
     border-radius: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
-    padding: 40px;
+    padding: 20px;
 }
 
 hr {
@@ -67,7 +72,7 @@ section.introducao p {
 
 div#numeros, div#alfabeto, div#cumprimento, div#animais, div#cores{
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: 97%;
     height: 120px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -101,8 +106,54 @@ section.section_indice h1 {
     font-weight: 600;
 }
 
-div#con_num {
+div#con_num, div#con_alf, div#con_cum, div#con_ani, div#con_cor {
     max-height: 0;
     overflow: hidden;
 }
 
+section.section_indice p.centro {
+    text-align: center;
+}
+
+section.section_indice p {
+    text-align: left;
+}
+
+section.section_indice p.sinais {
+    text-align: center;
+    font-size: 100px;
+    font-family: ASL;
+}
+
+section.section_indice p.lista {
+    margin-left: 40px;
+}
+
+hr.damn {
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+div.where {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+p.son {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+div.where_imagem {
+    max-width: 400px;
+    height: 200px;
+}
+
+div.where_imagem img{
+    width: 200px;
+    height: 200px;
+}
