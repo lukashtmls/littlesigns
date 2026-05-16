@@ -65,7 +65,7 @@ section.introducao p {
     margin-top: 30px;
 }
 
-main > section.section_indice div{
+div#numeros, div#alfabeto, div#cumprimento, div#animais, div#cores{
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 120px;
@@ -78,7 +78,7 @@ main > section.section_indice div{
     text-align: center;
 }
 
-main > section.section_indice img{
+section.section_indice img{
     display: block;
     width: 200px;
     margin: auto;
@@ -91,12 +91,18 @@ section.section_indice hr {
     margin-top: 5px;
 }
 
-section.section_indice div:hover {
+div#numeros:hover, div#alfabeto:hover, div#cumprimento:hover, div#animais:hover, div#cores:hover {
     transform: scale(1.02);
     cursor: pointer;
 }
 
-main > section.section_indice h1 {
+section.section_indice h1 {
     font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
+
+div#con_num {
+    max-height: 0;
+    overflow: hidden;
+}
+

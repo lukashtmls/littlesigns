@@ -25,10 +25,13 @@
         </section>
         <hr>
         <section class="section_indice">
-            <div id="numeros" onclick="a_num()">
+            <div id="numeros" onclick="abrir()">
                 <img src="imagens/numeros.webp" alt="imagem numeros">
                 <hr>
                 <h1>Números</h1>
+                <div id="con_num" class="con_num" onclick="abrir()">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fuga veniam doloribus temporibus, ducimus porro numquam incidunt blanditiis adipisci quasi alias velit soluta excepturi aspernatur modi. Minus iste officiis doloremque.</p>
+                </div>
             </div>
 
             <div id="alfabeto" onclick="a_alf()">
@@ -59,9 +62,12 @@
     </main>
 </body>
 <script>
-    function a_num() {
-        window.document.getElementById("numeros").style.height = "200px"
-
+    function abrir() {
+        document.getElementById("numeros").style.height = "auto"
+        document.getElementById("con_num").style.maxHeight = "1000px"
+        document.getElementById("con_num").style.overflow = "visible"
+        document.getElementById("numeros").style.transform = "scale(1)"
+        document.getElementById("numeros").style.cursor = "auto"
     }
 
     function a_alf() {
