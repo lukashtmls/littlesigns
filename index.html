@@ -160,15 +160,105 @@
                 <img src="imagens/animais.webp" alt="imagem animais">
                 <hr>
                 <h1>Animais</h1>
+                <div id="con_ani" class="con_ani"> 
+                    <p class="centro">O objetivo é que a criança associe o sinal diretamente ao animal e compreenda uma de suas características principais.<br><br></p>
+                    <p><strong>Característica:</strong> Apresente o sinal do animal associando-o a uma característica física ou sonora fácil. Para o gato, mostre a forma do sinal e faça o som ou o movimento de seus miados/patas.<br><br></p>
+                    <p><strong>Imagens e Brinquedos:</strong> Imagens grandes, fotos ou bichos de pelúcia podem reforçar a associação visual.<br><br></p>
+                    <p><strong>Repetição e Nomeação:</strong> Sinalize e peça para a criança nomeá-lo. Em seguida, peça para a criança sinalizar o animal quando você o nomear. Isso cria a <strong>conexão bidirecional</strong><br><br></p>
+                    <p class="centro"><strong>Consolidação e Prática </strong>Com os sinais básicos memorizados, o foco se move para a diferenciação e organização dos animais em categorias. Introduza a categorização. Sinalize uma categoria (Ex: "Animal da Fazenda") e aponte aleatoriamente para diferentes figuras de animais. A criança deve sinalizar "SIM" ou "NÃO" (ou balançar a cabeça) para confirmar se o animal pertence àquela categoria. </p>
+
+                    <hr class="damn">
+
+                    <div class="where">
+                        <p class="son">JACARÉ<br>ALLIGATOR</p>
+                        <div class="where_imagem">
+                            <img src="imagens/sinais/alligator.png" alt="">
+                        </div>
+                    </div>
+
+                    <hr class="damn">
+
+                    <div class="where">
+                        <p class="son">BORBOLETA<br>BUTTERFLY</p>
+                        <div class="where_imagem">
+                            <img src="imagens/sinais/butterfly.png" alt="">
+                        </div>
+                    </div>
+
+                    <hr class="damn">
+
+                    <div class="where">
+                        <p class="son">GOLFINHO<br>DOLPHIN</p>
+                        <div class="where_imagem">
+                            <img src="imagens/sinais/dolphin.png" alt="">
+                        </div>
+                    </div>
+
+                    <hr class="damn">
+
+                    <div class="where">
+                        <p class="son">GALINHA<br>CHICKEN</p>
+                        <div class="where_imagem">
+                            <img src="imagens/sinais/chicken.png" alt="" class="menor">
+                            <img src="imagens/sinais/chicken2.png" alt="" class="menor">
+                        </div>
+                    </div>
+
+                    <hr class="damn">
+
+                    <div class="where">
+                        <p class="son">PÁSSARO<br>BIRD</p>
+                        <div class="where_imagem">
+                            <img src="imagens/sinais/lilbird.png" alt="" class="menor">
+                            <img src="imagens/sinais/lilbird2.png" alt="" class="menor">
+                        </div>
+                    </div>
+
+                    <hr class="damn">
+
+                    <div class="where">
+                        <p class="son">URSO<br>BEAR</p>
+                        <div class="where_imagem">
+                            <img src="imagens/sinais/bird.png" alt="">
+                        </div>
+                    </div>
+
+                    <hr class="damn">
+
+                    <div class="where">
+                        <p class="son">MORCEGO<br>BAT</p>
+                        <div class="where_imagem">
+                            <img src="imagens/sinais/bat.png" alt="">
+                        </div>
+                    </div>
+
+                    <hr class="damn">
+
+                    <div class="where">
+                        <p class="son">TARTARUGA MARINHA<br>SEA TURTLE</p>
+                        <div class="where_imagem">
+                            <img src="imagens/sinais/seaturtkle.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="cores" onclick="a_cor()">
                 <img src="imagens/cores.jpeg" alt="imagem cores">
                 <hr>
                 <h1>Cores</h1>
+                <div id="con_cor" class="con_cor">
+                    <p class="centro">O objetivo é que a criança associe o sinal da cor a uma percepção visual e, idealmente, tátil da cor.<br><br></p>
+                    <p><strong>Apresentação:</strong> Introduza o sinal de cada cor mostrando-o junto com um objeto daquela cor.<br><br></p>
+                    <p><strong>Repetição e Nomeação:</strong> Sinalize a cor e peça para a criança nomeá-la verbalmente (se possível). Em seguida, diga o nome da cor e peça para a criança fazer o sinal. Esta repetição bidirecional fortalece o elo.<br><br></p>
+                    <p><strong>Reforço com Cartões:</strong> Utilize cartões de cores puras. Peça à criança para classificar objetos na frente dela, colocando-os sobre o cartão da cor correspondente.</p>
+                    <p class="centro">Com o vocabulário das cores memorizado, o foco é diferenciar as cores umas das outras e selecioná-las rapidamente. Espalhe vários objetos de cores diferentes. Diga o nome de uma cor (Ex: "AZUL") e peça para a criança:<br><br></p>
+                    <p class="lista"><strong>• Fazer o sinal da cor AZUL</strong></p>
+                    <p class="lista"><strong>• Pegar um objeto azul o mais rápido possível.</strong><br><br></p>
+                    <p class="centro">Outra ideia onde o sinal vem antes, sinalize uma cor e peça para a criança apontar para algo naquela cor na sala. Este exercício exige que a criança recupere o significado visual a partir do sinal.</p>
+                </div>
             </div>
         </section>
-
     </main>
 </body>
 <script>
@@ -197,11 +287,19 @@
     }
 
     function a_ani() {
-        window.document.getElementById("animais").style.height = "200px"
+        document.getElementById("animais").style.height = "auto"
+        document.getElementById("con_ani").style.maxHeight = "9999999px"
+        document.getElementById("con_ani").style.overflow = "visible"
+        document.getElementById("animais").style.transform = "scale(1)"
+        document.getElementById("animais").style.cursor = "auto"
     }
 
     function a_cor() {
-        window.document.getElementById("cores").style.height = "200px"
+        document.getElementById("cores").style.height = "auto"
+        document.getElementById("con_cor").style.maxHeight = "9999999px"
+        document.getElementById("con_cor").style.overflow = "visible"
+        document.getElementById("cores").style.transform = "scale(1)"
+        document.getElementById("cores").style.cursor = "auto"
     }
 </script>
 </html>
