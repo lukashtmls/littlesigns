@@ -1,165 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Margarine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantora+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 @font-face {
-    font-family: ASl;
-    src: url(fontes/American\ Sign\ Lenguage.otf) format('opentype');
+  font-family: ASl;
+  src: url(fontes/American\ Sign\ Lenguage.otf) format("opentype");
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-    font-size: 20px;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    font-weight: 500;
+  font-size: 20px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 header {
-    text-align: center;
-    background-color: rgb(210, 210, 255);
-    padding: 5px;
+  text-align: center;
+  background-color: rgb(210, 210, 255);
+  padding: 5px;
 }
 
 header > h1 {
-    font-weight: 100;
-    font-family: Margarine, Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 0)
+  font-weight: 100;
+  font-family: Margarine, Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 0, 0);
 }
 
 body {
-    background-color: rgb(255, 255, 205);
+  background-color: rgb(255, 255, 205);
 }
 
 main {
-    background-color: white;
-    margin: auto;
-    max-width: 700px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
-    padding: 20px;
+  background-color: white;
+  margin: auto;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+  padding: 20px;
 }
 
 hr {
-    margin: 30px 10px 30px 10px;
+  margin: 30px 10px 30px 10px;
 }
 
 section.introducao h1 {
-    text-align: center;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
+  text-align: center;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
 }
 
 section.introducao img {
-    display: block;
-    height: 200px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin: auto;
+  display: block;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin: auto;
 }
 
 section.introducao p {
-    font-size: 20px;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    margin-top: 30px;
+  font-size: 20px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
 }
 
-div#numeros, div#alfabeto, div#cumprimento, div#animais, div#cores{
-    background-color: rgb(255, 255, 255);
-    width: 97%;
-    height: 120px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    transition: .25s;
-    padding: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-    text-align: center;
+button#numeros,
+button#alfabeto,
+button#cumprimento,
+button#animais,
+button#cores {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 130px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: 0.25s;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #bbb;
 }
 
-section.section_indice img{
-    display: block;
-    width: 200px;
-    margin: auto;
-    border-radius: 15px;
+button.hover:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+div.oculto {
+  display: none;
+}
+
+section.section_indice img {
+  display: block;
+  width: 200px;
+  margin: auto;
+  border-radius: 15px;
 }
 
 section.section_indice hr {
-    width: 100%;
-    margin: 0;
-    margin-top: 5px;
-}
-
-div#numeros:hover, div#alfabeto:hover, div#cumprimento:hover, div#animais:hover, div#cores:hover {
-    transform: scale(1.02);
-    cursor: pointer;
+  width: 100%;
+  margin: 0;
+  margin-top: 5px;
 }
 
 section.section_indice h1 {
-    font-family: 'Indie Flower', Arial, Helvetica, sans-serif;
-    font-weight: 600;
-}
-
-div#con_num, div#con_alf, div#con_cum, div#con_ani, div#con_cor {
-    max-height: 0;
-    overflow: hidden;
+  font-family: "Indie Flower", Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 section.section_indice p.centro {
-    text-align: center;
+  text-align: center;
 }
 
 section.section_indice p {
-    text-align: left;
+  text-align: left;
 }
 
 section.section_indice p.sinais {
-    text-align: center;
-    font-size: 100px;
-    font-family: ASL;
+  text-align: center;
+  font-size: 100px;
+  font-family: ASL;
 }
 
 section.section_indice p.lista {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 hr.damn {
-    height: 3px;
-    background-color: black;
-    border-radius: 10px;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
 }
 
 div.where {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 p.son {
-    font-weight: 700;
-    font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 div.where_imagem {
-
-    display: flex;
-    max-width: 400px;
-    height: 200px;
+  display: flex;
+  max-width: 400px;
+  height: 200px;
 }
 
-div.where_imagem img{
-    width: 150px;
-    height: 150px;
+div.where_imagem img {
+  width: 150px;
+  height: 150px;
 }
 
 div.where_imagem img.menor {
-    width: 60%;
-    height: 60%;
+  width: 60%;
+  height: 60%;
 }
