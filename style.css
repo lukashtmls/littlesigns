@@ -20,6 +20,10 @@ p {
   font-weight: 500;
 }
 
+div {
+  transition: 0.15s;
+}
+
 header {
   text-align: center;
   background-color: rgb(210, 210, 255);
@@ -88,7 +92,7 @@ button#cores {
   border: 1px solid #bbb;
 }
 
-button.hover:hover {
+.hover:hover {
   transform: scale(1.01);
   cursor: pointer;
 }
@@ -98,7 +102,6 @@ div.oculto {
 }
 
 section.section_indice img {
-  display: block;
   width: 200px;
   margin: auto;
   border-radius: 15px;
@@ -115,54 +118,23 @@ section.section_indice h1 {
   font-weight: 600;
 }
 
-section.section_indice p.centro {
-  text-align: center;
-}
-
-section.section_indice p {
-  text-align: left;
-}
-
 section.section_indice p.sinais {
   text-align: center;
   font-size: 100px;
   font-family: ASL;
 }
 
-section.section_indice p.lista {
-  margin-left: 40px;
-}
-
-hr.damn {
-  height: 3px;
-  background-color: black;
-  border-radius: 10px;
-}
-
-div.where {
+div.conteudo {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 5px;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ddd;
 }
 
-p.son {
-  font-weight: 700;
-  font-size: 20px;
-}
-
-div.where_imagem {
+div.BotaoNumeros {
   display: flex;
-  max-width: 400px;
-  height: 200px;
-}
-
-div.where_imagem img {
-  width: 150px;
-  height: 150px;
-}
-
-div.where_imagem img.menor {
-  width: 60%;
-  height: 60%;
+  flex-direction: column;
+  align-items: center;
 }
