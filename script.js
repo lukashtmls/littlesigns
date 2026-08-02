@@ -2,5 +2,5 @@ document
   .querySelector("div.BotaoNumeros")
   .addEventListener("click", function () {
     document.querySelector("div.con_num").classList.toggle("oculto");
-    document.querySelector("div.conteudo").classList.toggle("hover");
+    document.querySelector("div.ConteudoNumeros").classList.toggle("hover");
   });
