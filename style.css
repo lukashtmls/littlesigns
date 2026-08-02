@@ -152,7 +152,7 @@ div.exemplos {
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid black;
-  height: 170px;
+  height: 200px;
 }
 
 .exemplos p {
@@ -168,5 +168,5 @@ div.exemplos {
 }
 
 .imgExemplo img {
-  max-height: 170px;
+  max-height: 200px;
 }
