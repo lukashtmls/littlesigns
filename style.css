@@ -119,8 +119,11 @@ section.section_indice p.sinais {
 /* BOTÕES */
 
 div.conteudo,
+.ConteudoAlfabeto,
 .ConteudoNumeros,
-.ConteudoCumprientos {
+.ConteudoCumprientos,
+.ConteudoAnimais,
+.ConteudoCores {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,16 +133,22 @@ div.conteudo,
   margin-bottom: 20px;
 }
 
+div.BotaoAlfabeto,
 div.BotaoNumeros,
-div.BotaoCumprimentos {
+div.BotaoCumprimentos,
+div.BotaoAnimais,
+div.BotaoCores {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
+div.con_alf,
 div.con_num,
-div.con_cum {
+div.con_cum,
+div.con_ani,
+div.con_cor {
   padding: 20px;
   padding-top: 0;
 }
@@ -152,21 +161,25 @@ div.exemplos {
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid black;
-  height: 200px;
+  max-height: 100%;
 }
 
 .exemplos p {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 .imgExemplo {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: end;
   justify-content: end;
+  flex-wrap: wrap;
+  margin: 5px;
 }
 
 .imgExemplo img {
-  max-height: 200px;
+  height: 130px;
+  border: 1px solid #aaa;
+  width: 130px;
 }
