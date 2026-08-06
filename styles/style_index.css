@@ -9,6 +9,10 @@
   src: url(../fontes/American\ Sign\ Lenguage.otf) format("opentype");
 }
 
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +27,12 @@ ul {
 
 p.centro {
   text-align: center;
+}
+
+.introducao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 li {
@@ -60,4 +70,15 @@ main {
 
 hr {
   margin: 30px 10px 30px 10px;
+}
+
+.modulos {
+  display: flex;
+  margin-top: 30px;
+}
+
+.modulos a {
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
